@@ -33,35 +33,5 @@
             </form>   
         </div>
     </div>
-    <div class="row">
-        @if(count($pedidos))
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <td>Rut</td>
-                        <td>Nombre</td>
-                        <td>Apellido Paterno</td>
-                        <td>Apellido Materno</td>
-                        <td>Empresa</td>
-                        <td>Dias</td>
-                        <td>Monto Diario</td>
-                        <td>Monto Final</td>
-                    </tr>
-                </thead>
-                @foreach($pedidos as $pedido)
-                    <tr>
-                        <td>{{ $pedido->Rut }}</td>
-                        <td>{{ $pedido->Nombre }}</td>
-                        <td>{{ $pedido->Apellido_Paterno }}</td>
-                        <td>{{ $pedido->Apellido_Materno }}</td>
-                        <td>{{ $pedido->Empresa }}</td>
-                        <td>{{ $pedido->Dias }}</td>
-                        <td>{{ $pedido->Monto_Diario }}</td>
-                        <td>{{ $pedido->Monto_Final }}</td>
-                    </tr>
-                @endforeach
-            </table>
-        @endif
-    </div>
 </div>  
 @endsection
